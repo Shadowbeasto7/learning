@@ -1,0 +1,150 @@
+<section class="Home" id="Home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box" style="background:url(images/Creekside-0109.jpg);">
+                    <div class="content">
+                        <span> </span>
+                        <h3>Welcome to New Basanta Nursery WebSite </h3>
+                        <a href="" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box" style="background:url(images/IMG_2741.JPG);">
+                    <div class="content">
+                        <span>Upto 45% off</span>
+                        <h3>Plant are now avilable in a special price </h3>
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box" style="background:url(./images/IMG_3443.JPG);">
+                    <div class="content">
+                        <span>Upto 15% off</span>
+                        <h3>Plants special offer</h3>
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<section class="banner-container">
+    <div class="banner">
+        <img src="images/IMG_2407.JPG" alt="may content image of flower">
+        <div class="content">
+            <span>New Arrivals</span>
+            <h3>Flowering Plants</h3>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="images/IMG_E1933.JPG" alt="may content image of flower">
+        <div class="content">
+            <span>New arrivals</span>
+            <h3>Indoor Plants</h3>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+    </div>
+    </section>
+
+<div class="product-section popular-products">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="section-head">Popular Products</h2>
+            <div class="popular-carousel owl-carousel owl-theme">
+            
+                <div class="product-grid latest item">
+                    <div class="product-image popular">
+                        <a class="image" href="single_product.php?pid=<?php echo $row['product_id']; ?>">
+                            <img class="pic-1" src="product-images/<?php echo $row['featured_image']; ?>">
+                        </a>
+                        <div class="product-button-group">
+                            <a href="single_product.php?pid=<?php echo $row['product_id']; ?>" ><i class="fa fa-eye"></i></a>
+                            <a href="" class="add-to-cart" data-id="<?php echo $row['product_id']; ?>"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="add-to-wishlist" data-id="<?php echo $row['product_id']; ?>"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title">
+                            <a href="single_product.php?pid=<?php echo $row['product_id']; ?>"><?php echo substr($row['product_title'],0,25),'...'; ?></a>
+                        </h3>
+                        <div class="price"><?php echo $cur_format; ?> <?php echo $row['product_price']; ?></div>
+                    </div>
+                </div>
+                <?php    }
+                }else{
+            } ?>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<section class="contact" id="Contact">
+
+<h1 class="heading">Get in touch</h1>
+
+<div class="row">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3767545505507!2d85.33404187541294!3d27.70565152556637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199e2b0109e5%3A0x9e318e137cc1bc2e!2sNew%20Basanta%20Nursery!5e0!3m2!1sen!2snp!4v1724510062080!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<form action="">
+
+    <div class="inputBox">
+        <input type="text" required>
+        <label>name</label>
+    </div>
+    <div class="inputBox">
+        <input type="email" required>
+        <label>email</label>
+    </div>
+    <div class="inputBox">
+        <input type="number" required>
+        <label>number</label>
+    </div>
+    <div class="inputBox">
+        <textarea required name="" id="" cols="30" rows="10"></textarea>
+        <label>message</label>
+    </div>
+
+    <input type="submit" value="send message" class="btn">
+
+</form>
+
+</div>
+
+</section>
+<section class="icons-container">
+    <div class="icon">
+        <img src="./images/icon1.png" alt="">
+        <div class="content">
+            <h3>Free shipping</h3>
+            <p>Free shipping on order</p>
+        </div>
+    </div>
+    <div class="icon">
+        <img src="./images/icon2.png" alt="">
+        <div class="content">
+            <h3>100% Money Back</h3>
+            <p>You've 30 days to return</p>
+        </div>
+    </div>
+    <div class="icon">
+        <img src="./images/icon3.png" alt="">
+        <div class="content">
+            <h3>Payment Secure</h3>
+            <p>100% secure payment</p>
+        </div>
+    </div>
+    <div class="icon">
+        <img src="./images/icon4.png" alt="">
+        <div class="content">
+            <h3>Support24/7</h3>
+            <p>Contact us any times</p>
+        </div>
+    </div>
+</section>
